@@ -1,4 +1,4 @@
-# Prowider Mini Lead Distribution System
+# Provider Mini Lead Distribution System
 
 A simplified lead generation and provider distribution platform inspired by real-world systems like Prowider.
 
