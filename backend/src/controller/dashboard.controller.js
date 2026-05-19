@@ -3,7 +3,7 @@ const leadmodel = require('../models/lead.model')
 async function dashboard(req, res) {
   try {
 
-    const solve = await leadmodel.find({ iscomplete: "completed" })
+    const solve = await leadmodel.find({ iscomplete: "solve" })
     const pending = await leadmodel.find({ iscomplete: "pending" })
 
     res.status(200).json({
