@@ -73,4 +73,22 @@ async function postquery(req, res) {
   }
 }
 
-module.exports = postquery
+async function totallead(req, res) {
+  try {
+
+    const total = await leadmodel.find()
+
+    res.status(200).json({
+      total
+    })
+
+  } catch (error) {
+    res.status(500).json({
+      message: error.message
+    })
+  }
+}
+module.exports = {
+  postquery ,
+  totallead
+}
